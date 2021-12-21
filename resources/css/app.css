@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Omnes-Regular';
+    src: url("../../../assets/fonts/omnes-regular.ttf");
+}
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Omnes-Regular';
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(35,35,39);
+    
+
+    display: grid;
+    place-items: center;
+}
+
+.pdf-cert {
+    width: 29.7cm;
+    height: 21cm;
+    display: grid;
+    place-items: center;
+    /* background-image: url('plantilla-certificado.png'); */
+    background-size: cover;
+    position: relative;
+}
+
+.pdf-cert img {
+    width: 29.7cm;
+    height: 21cm;
+    position: absolute;
+}
+
+.pdf-cert span {
+    display: inline-block;
+    position: absolute;
+    background: transparent;
+    border: none;
+    color: #1b587f;
+    font-size: 27px;
+    font-family: 'Omnes-Regular';
+    font-weight: bold;
+} 
+
+.pdf-cert .nombre {
+    width: 300px;
+    top: 335px;
+    left: 300px;
+    word-spacing: 3px;
+}
+
+.pdf-cert .dni {
+    width: 300px;
+    top: 335px;
+    left: 810px;
+}
